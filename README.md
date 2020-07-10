@@ -1,3 +1,15 @@
+# Netlifyへのデプロイ
+
+今回universalモード、staticをターゲットとしている
+（nuxt.config.js上、mode:'universal', target: 'static'）
+
+Netlify上のコマンドは以下の通り。distに出力される。generateではないので注意
+
+```
+$ nuxt build && nuxt export
+```
+
+
 # application-landing-page
 
 ## Build Setup
