@@ -31,6 +31,22 @@
                         data-aos-offset="0"
                     >備</h3>
                   </div>
+                  <div>
+                    <v-layout row justify-center>
+                      <v-img :src="require('../assets/store/app_store_badge.svg')"
+                             width="100"
+                             height="55"
+                             style="border-radius: 10px;"
+                             onclick="alert('AppStore申請中')"
+                      />
+                      <v-img :src="require('../assets/store/google-play-badge.png')"
+                             width="120"
+                             height="55"
+                             style="border-radius: 10px;"
+                             onclick="alert('GooglePlay申請中')"
+                      />
+                    </v-layout>
+                  </div>
                 </div>
               </v-layout>
             </v-flex>
@@ -43,8 +59,9 @@
                      data-aos-delay="700"
                      data-aos-duration="2000"
                      data-aos-offset="-400"
+                     style="padding-bottom: 0"
         >
-          <v-layout row wrap justify-center align-end>
+          <v-layout row wrap justify-center align-end class="topLayout">
             <v-img class="topImage"
                    v-bind:src="require('@/assets/bichikun/screenshot1.png')" />
           </v-layout>
@@ -85,11 +102,13 @@ export default {
     transform: translate(-0%, -50%);
     opacity: 0.2;
   }
+  .topLayout {
+    position: relative;
+
+  }
   .topImage {
     width: 60%;
     position: absolute;
     bottom: 0;
   }
-
-
 </style>
