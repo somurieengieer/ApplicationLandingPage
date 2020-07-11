@@ -20,10 +20,7 @@
                      data-aos-offset="-400"
                      style="padding-bottom: 0"
         >
-          <v-layout row wrap justify-center align-end class="topLayout">
-            <v-img class="topImage"
-                   v-bind:src="require('@/assets/bichikun/screenshot1.png')" />
-          </v-layout>
+          <ImpactImage src="bichikun/screenshot1.png" />
         </v-container>
       </v-col>
     </v-row>
@@ -32,10 +29,11 @@
 
 <script>
   import ImpactText from "./ImpactText";
+  import ImpactImage from "./ImpactImage";
 
   export default {
   name: 'FirstView',
-  components: {ImpactText},
+  components: {ImpactImage, ImpactText},
   props: {
     msg: String
   }
@@ -46,30 +44,5 @@
 <style scoped>
   .topContainer {
     padding-bottom: 0;
-  }
-  h2 {
-    font-size: 100px;
-    color: #FFFFFF;
-    margin-bottom: 0;
-  }
-  p {
-    color: #FFFFFF;
-  }
-  .h3div {
-    color: #FFFFFF;
-    font-size: 300px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-0%, -50%);
-    opacity: 0.2;
-  }
-  .topLayout {
-    position: relative;
-
-  }
-  .topImage {
-    width: 60%;
-    position: absolute;
-    bottom: 0;
   }
 </style>
