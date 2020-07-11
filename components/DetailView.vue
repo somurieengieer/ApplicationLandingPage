@@ -6,6 +6,7 @@
                      :back-character="backCharacter"
                      :store-icon="false"
                      :src="src"
+                     :imageLeft=imageLeft
     />
   </v-container>
 </template>
@@ -18,6 +19,11 @@ export default {
     subMessage: String,
     backCharacter: String,
     src: String, // assets/以下のパスを記載
+    imageLeft: {
+      type: Boolean,
+      required: false,
+      default: false,
+    }
   }
 }
 </script>

@@ -4,20 +4,23 @@
          style="height: 100%; min-height: 400px;"
   >
     <v-col cols=6 data-aos="fade-in"
+           v-for="leftItem in [true, false]"
+           :key="leftItem"
     >
+      <p>{{typeof leftItem}} : {{typeof imageLeft}} : {{leftItem === imageLeft}}</p>
       <ImpactText :main-message="mainMessage"
                   :sub-message="subMessage"
                   :back-character="backCharacter"
                   :store-icon="storeIcon"
+                  v-if="leftItem !== imageLeft"
                   />
-    </v-col>
-    <v-col cols=6 data-aos="fade-in">
       <v-container bg fill-height
                    data-aos="fade-in"
                    data-aos-delay="700"
                    data-aos-duration="2000"
                    data-aos-offset="-400"
                    style="padding-bottom: 0"
+                   v-if="leftItem === imageLeft"
       >
         <ImpactImage3d :src="src" />
       </v-container>
@@ -38,7 +41,12 @@
       backCharacter: String,
       storeIcon: Boolean,
       src: String, // assets/以下のパスを記載
-    }
+      imageLeft: {
+        type: Boolean,
+        required: false,
+        default: false,
+      }
+    },
 }
 </script>
 
