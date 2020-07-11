@@ -27,12 +27,18 @@ https://colorlib.com/demo?theme=ca-app
 840px までは普通に表示される
 375px (iPhone6~8, X)
 
-768px以上と以下で分ける。
+960px以上と以下で分ける。（sm）
 
-768px以下の動き
+960px以下の動き
 ・タイトルバーの表示を少なくする
 ・文字と画像を上下に並べる
 ・画像のサイズを小さくする
+
+
+### 参考（v-flexのサイズ基準）
+0px    600px    960px    1264px    1904px
+    xs       sm       md       lg          xl
+   スマホ   タブレット   PC
 
 ### 参考（Bootstrapのサイズ基準）
 0px    554px    768px    992px    1200px

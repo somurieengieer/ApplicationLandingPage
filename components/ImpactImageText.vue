@@ -1,11 +1,14 @@
 <template>
-  <v-row class="mb-2"
-         no-gutters
-         style="height: 100%; min-height: 400px;"
+  <!-- v-layoutにrowを入れれば横並び、columnで縦-->
+  <v-layout row wrap align-center
+            style="height: 100%; min-height: 400px;"
   >
-    <v-col cols=6 data-aos="fade-in"
-           v-for="leftItem in [true, false]"
-           :key="leftItem"
+
+      <!-- v-layoutで左右中央寄せにする -->
+    <v-flex xs12 sm12 md6
+            data-aos="fade-in"
+            v-for="leftItem in [true, false]"
+            :key="leftItem"
     >
       <ImpactText :main-message="mainMessage"
                   :sub-message="subMessage"
@@ -14,17 +17,12 @@
                   v-if="leftItem !== imageLeft"
                   />
       <v-container bg fill-height
-                   data-aos="fade-in"
-                   data-aos-delay="700"
-                   data-aos-duration="2000"
-                   data-aos-offset="-400"
-                   style="padding-bottom: 0"
                    v-if="leftItem === imageLeft"
       >
         <ImpactImage3d :src="src" />
       </v-container>
-    </v-col>
-  </v-row>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
