@@ -27,7 +27,7 @@
 
 <script>
   import ImpactText from "./ImpactText";
-  import ImpactImage3d from "./ImpactImage3d";
+  import ImpactImage3d from "./ImpactImage";
 
   export default {
     name: 'ImpactImageText',
