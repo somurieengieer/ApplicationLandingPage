@@ -2,11 +2,12 @@
   <v-content>
     <FirstView/>
     <DetailView main-message="Free"
-                sub-message="備蓄品を数え直して頭を悩ませていた日々はもう終わりです"
+                sub-message="備蓄品を数え直して"
                 back-character="F"
                 src="bichikun/screenshot2.png"
                 :image-left=true
     />
+<!--    sub-message="備蓄品を数え直して頭を悩ませていた日々はもう終わりです"-->
     <DetailView main-message="Nature"
                 sub-message="フードロス０の社会を一緒に創りませんか"
                 back-character="N"

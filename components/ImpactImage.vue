@@ -34,4 +34,10 @@ export default {
     transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg);
     /*transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg)  translate(-50%, -30%);*/
   }
+  @media (max-width: 600px) {
+    .topImage {
+      max-width: 200px;
+    }
+
+  }
 </style>

@@ -82,4 +82,13 @@ export default {
     top: 50%;
     transform: translate(-0%, -50%);
   }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 60px;
+    }
+    .backCharacter {
+      font-size: 200px;
+    }
+
+  }
 </style>
