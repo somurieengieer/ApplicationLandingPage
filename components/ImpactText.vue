@@ -6,7 +6,7 @@
       <v-flex>
         <!-- v-layoutで左右中央寄せにする -->
         <v-layout justify-center>
-          <div>
+          <div class="alignCenterParent">
             <div class="h2div"
                  data-aos="zoom-in"
             >
@@ -18,7 +18,7 @@
             >
               <p>{{ subMessage }}</p>
             </div>
-            <div class="h3div">
+            <div class="backCharacter alignCenterChild">
               <h3 data-aos="zoom-in"
                   data-aos-duration="2000"
                   data-aos-offset="0"
@@ -69,12 +69,17 @@ export default {
   p {
     color: #FFFFFF;
   }
-  .h3div {
+  .backCharacter {
     color: #FFFFFF;
     font-size: 300px;
+    opacity: 0.2;
+  }
+  .alignCenterParent {
+    position: relative;
+  }
+  .alignCenterChild {
     position: absolute;
     top: 50%;
     transform: translate(-0%, -50%);
-    opacity: 0.2;
   }
 </style>

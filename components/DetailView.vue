@@ -1,22 +1,17 @@
 <template>
   <v-container bg fluid fill-height class="topContainer">
     <v-sheet
-      style="width: 100%; margin-left: 20px; margin-right: 20px; opacity: 0.3;"
-      height="300"
+      class="sheet"
       elevation="20"
-      color="#FFF"
+      color="#7F828B"
       tile="false"
     >
-      <v-row class="mb-2"
-             no-gutters
-             style="height: 100%; min-height: 400px;"
-      >
-        <v-col cols=6 data-aos="fade-in"
-        >
-        </v-col>
-      </v-row>
-
-
+      <ImpactImageText main-message="びちくん"
+                       sub-message="かつてない備蓄品管理体験をあなたに"
+                       back-character="備"
+                       store-icon="true"
+                       src="bichikun/screenshot1.png"
+      />
     </v-sheet>
 
   </v-container>
@@ -33,32 +28,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .topContainer {
-    padding-bottom: 0;
+  .sheet {
+    width: 100%;
+    /*height: 100vh;*/
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  h2 {
-    font-size: 100px;
-    color: #FFFFFF;
-    margin-bottom: 0;
-  }
-  p {
-    color: #FFFFFF;
-  }
-  .h3div {
-    color: #FFFFFF;
-    font-size: 300px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-0%, -50%);
-    opacity: 0.2;
-  }
-  .topLayout {
-    position: relative;
+  /*.topContainer {*/
+  /*  margin: 0;*/
+  /*  padding: 0;*/
+  /*}*/
+  /*.topContainer:before {*/
+  /*  position: fixed;!*固定配置*!*/
+  /*  top: 0; left: 0;!*左上に固定*!*/
+  /*  width: 100%; height: 100%;!*画面全体を覆う*!*/
+  /*  content: "";*/
 
-  }
-  .topImage {
-    width: 60%;
-    position: absolute;
-    bottom: 0;
-  }
+  /*  background-color: #FFFFFF;*/
+  /*  opacity: 0.2;*/
+  /*}*/
+
+
 </style>
