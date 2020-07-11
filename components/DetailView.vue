@@ -1,12 +1,12 @@
 <template>
   <v-container bg fluid fill-height class="topContainer">
 
-      <ImpactImageText main-message="びちくん"
-                       sub-message="かつてない備蓄品管理体験をあなたに"
-                       back-character="備"
-                       store-icon="true"
-                       src="bichikun/screenshot1.png"
-      />
+    <ImpactImageText :main-message="mainMessage"
+                     :sub-message="subMessage"
+                     :back-character="backCharacter"
+                     :store-icon="false"
+                     :src="src"
+    />
   </v-container>
 </template>
 
@@ -14,7 +14,10 @@
 export default {
   name: 'DetailView',
   props: {
-    msg: String
+    mainMessage: String,
+    subMessage: String,
+    backCharacter: String,
+    src: String, // assets/以下のパスを記載
   }
 }
 </script>
@@ -24,7 +27,7 @@ export default {
   .sheet {
     width: 100%;
     /*height: 100vh;*/
-    height: 500px;
+    height: 700px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -33,7 +36,7 @@ export default {
     margin-top: 100px;
     padding: 0;
     position: relative;
-    height: 600px;
+    height: 800px;
   }
   .topContainer:before {
     display: block;

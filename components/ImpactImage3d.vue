@@ -23,6 +23,7 @@ export default {
   }
   .topImage {
     width: 60%;
+    max-width: 300px;
     position: absolute;
     bottom: 0;
     transform-style: preserve-3d;
