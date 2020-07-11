@@ -6,52 +6,11 @@
     >
       <v-col cols=6 data-aos="fade-in"
       >
-        <!-- fluidで横幅いっぱい full-heightで高さいっぱいにする-->
-        <v-container bg fluid fill-height>
-          <!-- v-layoutとv-flexで上下左右中央寄せにする-->
-          <v-layout row wrap align-center>
-            <v-flex>
-              <!-- v-layoutで左右中央寄せにする -->
-              <v-layout justify-center>
-                <div>
-                  <div class="h2div"
-                       data-aos="zoom-in"
-                  >
-                    <h2>びちくん</h2>
-                  </div>
-                  <div class="pdiv"
-                       data-aos="slide-right"
-                       data-aos-offset="0"
-                  >
-                    <p>かつてない備蓄品管理体験をあなたに</p>
-                  </div>
-                  <div class="h3div">
-                    <h3 data-aos="zoom-in"
-                        data-aos-duration="2000"
-                        data-aos-offset="0"
-                    >備</h3>
-                  </div>
-                  <div>
-                    <v-layout row justify-center>
-                      <v-img :src="require('../assets/store/app_store_badge.svg')"
-                             width="100"
-                             height="55"
-                             style="border-radius: 10px;"
-                             onclick="alert('AppStore申請中')"
-                      />
-                      <v-img :src="require('../assets/store/google-play-badge.png')"
-                             width="120"
-                             height="55"
-                             style="border-radius: 10px;"
-                             onclick="alert('GooglePlay申請中')"
-                      />
-                    </v-layout>
-                  </div>
-                </div>
-              </v-layout>
-            </v-flex>
-          </v-layout>
-        </v-container>
+        <ImpactText main-message="びちくん"
+                    sub-message="かつてない備蓄品管理体験をあなたに"
+                    back-character="備"
+                    store-icon="true"
+                    />
       </v-col>
       <v-col cols=6 data-aos="fade-in">
         <v-container bg fill-height
@@ -72,8 +31,11 @@
 </template>
 
 <script>
-export default {
+  import ImpactText from "./ImpactText";
+
+  export default {
   name: 'FirstView',
+  components: {ImpactText},
   props: {
     msg: String
   }
