@@ -1,5 +1,6 @@
 <template>
-  <v-container bg fluid fill-height class="topContainer">
+  <v-container bg fluid fill-height class="topContainer"
+  >
 
     <ImpactImageText :main-message="mainMessage"
                      :sub-message="subMessage"
@@ -30,13 +31,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .sheet {
-    width: 100%;
-    /*height: 100vh;*/
-    height: 700px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
   .topContainer {
     margin: 0;
     margin-top: 100px;

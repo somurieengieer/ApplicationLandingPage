@@ -1,27 +1,27 @@
 <template>
   <!-- v-layoutにrowを入れれば横並び、columnで縦-->
-  <v-layout row wrap align-center
-            style="height: 100%; min-height: 400px;"
+  <v-layout align-center fill-height
   >
+    <v-layout row wrap>
 
       <!-- v-layoutで左右中央寄せにする -->
-    <v-flex xs12 sm12 md6
-            data-aos="fade-in"
-            v-for="leftItem in [true, false]"
-            :key="leftItem"
-    >
-      <ImpactText :main-message="mainMessage"
-                  :sub-message="subMessage"
-                  :back-character="backCharacter"
-                  :store-icon="storeIcon"
-                  v-if="leftItem !== imageLeft"
-                  />
-      <v-container bg fill-height
-                   v-if="leftItem === imageLeft"
+      <v-flex xs12 sm12 md6
+              v-for="leftItem in [true, false]"
+              :key="leftItem"
       >
-        <ImpactImage3d :src="src" />
-      </v-container>
-    </v-flex>
+        <ImpactText :main-message="mainMessage"
+                    :sub-message="subMessage"
+                    :back-character="backCharacter"
+                    :store-icon="storeIcon"
+                    v-if="leftItem !== imageLeft"
+                    />
+        <v-container bg fill-height
+                     v-if="leftItem === imageLeft"
+        >
+          <ImpactImage3d :src="src" />
+        </v-container>
+      </v-flex>
+    </v-layout>
   </v-layout>
 </template>
 

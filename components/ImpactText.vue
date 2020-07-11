@@ -1,6 +1,6 @@
 <template>
   <!-- fluidで横幅いっぱい full-heightで高さいっぱいにする-->
-  <v-container bg fluid fill-height>
+  <v-container bg fluid fill-height data-aos="fade-in">
     <!-- v-layoutとv-flexで上下左右中央寄せにする-->
     <v-layout row wrap align-center>
       <v-flex>

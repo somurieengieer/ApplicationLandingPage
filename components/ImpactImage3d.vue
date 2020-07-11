@@ -1,8 +1,10 @@
 <template>
-  <v-layout row justify-center class="topLayout" style="height: 10px;">
+  <v-layout justify-center style="height: 400px;">
 <!--    @/assetsは呼び出し元で指定できない（するとcannot find moduleエラー）-->
-    <img class="topImage"
-           :src="require(`@/assets/${src}`)" />
+    <div style="topLayout">
+      <img class="topImage"
+             :src="require(`@/assets/${src}`)" />
+    </div>
   </v-layout>
 </template>
 
@@ -18,7 +20,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .topLayout {
-    height: 10px;
+    /*height: 400px; heightはstyleに書かないと優先順的に動かない */
     position: absolute;
     perspective: 2000px;
   }
@@ -26,9 +28,10 @@ export default {
     /*width: 60%;*/
     max-width: 300px;
     position: relative;
-    top: -100px;
-    left: 50px;
+    bottom: 0px;
+    left: 0px;
     transform-style: preserve-3d;
     transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg);
+    /*transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg)  translate(-50%, -30%);*/
   }
 </style>
