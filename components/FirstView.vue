@@ -27,6 +27,8 @@
 <style scoped>
   .topContainer {
     padding-bottom: 0;
-    height: 600px;
+    /*height: 600px;*/
+    height: 100vh;
+
   }
 </style>

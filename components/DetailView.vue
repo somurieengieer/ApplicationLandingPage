@@ -1,19 +1,12 @@
 <template>
   <v-container bg fluid fill-height class="topContainer">
-    <v-sheet
-      class="sheet"
-      elevation="20"
-      color="#7F828B"
-      tile="false"
-    >
+
       <ImpactImageText main-message="びちくん"
                        sub-message="かつてない備蓄品管理体験をあなたに"
                        back-character="備"
                        store-icon="true"
                        src="bichikun/screenshot1.png"
       />
-    </v-sheet>
-
   </v-container>
 </template>
 
@@ -35,19 +28,25 @@ export default {
     margin-left: 20px;
     margin-right: 20px;
   }
-  /*.topContainer {*/
-  /*  margin: 0;*/
-  /*  padding: 0;*/
-  /*}*/
-  /*.topContainer:before {*/
-  /*  position: fixed;!*固定配置*!*/
-  /*  top: 0; left: 0;!*左上に固定*!*/
-  /*  width: 100%; height: 100%;!*画面全体を覆う*!*/
-  /*  content: "";*/
+  .topContainer {
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    position: relative;
+    height: 600px;
+  }
+  .topContainer:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
 
-  /*  background-color: #FFFFFF;*/
-  /*  opacity: 0.2;*/
-  /*}*/
+    background-color: #FFFFFF;
+    opacity: 0.2;
+  }
 
 
 </style>

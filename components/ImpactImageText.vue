@@ -19,7 +19,7 @@
                    data-aos-offset="-400"
                    style="padding-bottom: 0"
       >
-        <ImpactImage :src="src" />
+        <ImpactImage3d :src="src" />
       </v-container>
     </v-col>
   </v-row>
@@ -27,11 +27,11 @@
 
 <script>
   import ImpactText from "./ImpactText";
-  import ImpactImage from "./ImpactImage";
+  import ImpactImage3d from "./ImpactImage3d";
 
   export default {
     name: 'ImpactImageText',
-    components: {ImpactImage, ImpactText},
+    components: {ImpactImage3d, ImpactText},
     props: {
       mainMessage: String,
       subMessage: String,
