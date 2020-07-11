@@ -1,21 +1,19 @@
 <template>
-  <v-app>
-    <v-content>
-      <FirstView/>
-<!--      <HelloAOS/>-->
-    </v-content>
-  </v-app>
+  <v-content>
+    <FirstView/>
+    <DetailView/>
+  </v-content>
 </template>
 
 <script>
-  // import HelloAOS from "../components/HelloAOS";
   import FirstView from "../components/FirstView";
+  import DetailView from "../components/DetailView";
 
 
   export default {
   components: {
+    DetailView,
     FirstView,
-    // HelloAOS,
   },
   data: () => ({
     //

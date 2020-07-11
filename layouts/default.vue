@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background: initial">
     <v-app-bar
       app
       color="#3A3A3A"
@@ -61,3 +61,15 @@ export default {
   }
 }
 </script>
+
+<style>
+  .body-class:before {
+    position: fixed;/*固定配置*/
+    top: 0; left: 0;/*左上に固定*/
+    width: 100%; height: 100%;/*画面全体を覆う*/
+    content: "";
+
+    background: linear-gradient(160deg, #05FBFF, #1E00FF); /* 160度の角度からグラデーション */
+    padding-bottom: 0;
+  }
+</style>

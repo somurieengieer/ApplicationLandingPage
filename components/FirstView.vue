@@ -83,7 +83,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .topContainer {
-    background: linear-gradient(160deg, #05FBFF, #1E00FF); /* 160度の角度からグラデーション */
     padding-bottom: 0;
   }
   h2 {
