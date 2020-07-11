@@ -1,12 +1,23 @@
 <template>
   <v-container bg fluid fill-height class="topContainer">
     <v-sheet
-      :width="800"
-      :height="300"
-      :elevation="5"
-      :color="white"
-      :tile="false"
-    ></v-sheet>
+      style="width: 100%; margin-left: 20px; margin-right: 20px; opacity: 0.3;"
+      height="300"
+      elevation="20"
+      color="#FFF"
+      tile="false"
+    >
+      <v-row class="mb-2"
+             no-gutters
+             style="height: 100%; min-height: 400px;"
+      >
+        <v-col cols=6 data-aos="fade-in"
+        >
+        </v-col>
+      </v-row>
+
+
+    </v-sheet>
 
   </v-container>
 </template>
@@ -23,7 +34,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .topContainer {
-    /*background: linear-gradient(160deg, #05FBFF, #1E00FF); !* 160度の角度からグラデーション *!*/
     padding-bottom: 0;
   }
   h2 {
