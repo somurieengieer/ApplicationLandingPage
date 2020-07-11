@@ -7,7 +7,6 @@
            v-for="leftItem in [true, false]"
            :key="leftItem"
     >
-      <p>{{typeof leftItem}} : {{typeof imageLeft}} : {{leftItem === imageLeft}}</p>
       <ImpactText :main-message="mainMessage"
                   :sub-message="subMessage"
                   :back-character="backCharacter"
