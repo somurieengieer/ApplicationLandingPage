@@ -1,37 +1,34 @@
 <template>
   <!-- fluidで横幅いっぱい full-heightで高さいっぱいにする-->
-  <v-container bg fluid fill-height data-aos="fade-in" class="root">
-    <!-- v-layoutとv-flexで上下左右中央寄せにする-->
-    <v-layout row wrap align-center>
-      <v-flex>
-        <!-- v-layoutで左右中央寄せにする -->
-        <v-layout justify-center>
-          <div class="alignCenterParent">
-            <div class="h2div"
-                 data-aos="zoom-in"
-            >
-              <h2>{{ mainMessage }}</h2>
-            </div>
-            <div class="pdiv"
-                 data-aos="slide-right"
-                 data-aos-offset="0"
-            >
-              <p>{{ subMessage }}</p>
-            </div>
-            <div class="backCharacter alignCenterChild">
-              <h3 data-aos="zoom-in"
-                  data-aos-duration="2000"
-                  data-aos-offset="0"
-              >{{ backCharacter }}</h3>
-            </div>
-            <div v-if="storeIcon">
-              <StoreIcon />
-            </div>
-          </div>
-        </v-layout>
-      </v-flex>
+  <!-- v-layoutとv-flexで上下左右中央寄せにする-->
+  <v-layout fluid fill-height row wrap align-center
+            data-aos="fade-in" class="root">
+    <!-- v-layoutで左右中央寄せにする -->
+    <v-layout justify-center>
+      <div class="alignCenterParent">
+        <div class="h2div"
+             data-aos="zoom-in"
+        >
+          <h2>{{ mainMessage }}</h2>
+        </div>
+        <div class="pdiv"
+             data-aos="slide-right"
+             data-aos-offset="0"
+        >
+          <p>{{ subMessage }}</p>
+        </div>
+        <div class="backCharacter alignCenterChild">
+          <h3 data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+          >{{ backCharacter }}</h3>
+        </div>
+        <div v-if="storeIcon">
+          <StoreIcon />
+        </div>
+      </div>
     </v-layout>
-  </v-container>
+  </v-layout>
 </template>
 
 <script>
