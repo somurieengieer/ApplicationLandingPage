@@ -31,10 +31,21 @@ export default {
   .topImage {
     max-width: 300px;
     position: relative;
-    top: 0px;
+    top: -10%;
     left: 0px;
     transform-style: preserve-3d;
     transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg);
+  }
+  @media (max-width: 960px) {
+    .containerLayout {
+      height: 300px !important;
+    }
+    .topLayout {
+      height: 300px !important;
+    }
+    .topImage {
+      top: -50%;
+    }
   }
   @media (max-width: 600px) {
     .containerLayout {
@@ -47,6 +58,5 @@ export default {
       width: 200px;
       top: -50%;
     }
-
   }
 </style>

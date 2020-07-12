@@ -84,7 +84,6 @@ export default {
   }
   @media (max-width: 600px) {
     .root {
-      /*height: */
       padding-top: 40px;
       padding-bottom: 40px;
     }

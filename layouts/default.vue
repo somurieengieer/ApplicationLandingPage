@@ -17,16 +17,17 @@
         >備蓄品管理ツール びちくん</h3>
       </div>
 
-      <v-spacer></v-spacer>
+<!--      <v-spacer></v-spacer>-->
 
-      <v-btn
-        target="_blank"
-        text
-        onclick="alert('link not yet created')"
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+<!--      <v-btn-->
+<!--        target="_blank"-->
+<!--        text-->
+<!--        onclick="alert('link not yet created')"-->
+<!--      >-->
+<!--        <span class="mr-2"-->
+<!--        >Latest Release</span>-->
+<!--        <v-icon>mdi-open-in-new</v-icon>-->
+<!--      </v-btn>-->
 
     </v-app-bar>
 
