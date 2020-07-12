@@ -25,18 +25,7 @@
               >{{ backCharacter }}</h3>
             </div>
             <div v-if="storeIcon">
-              <v-layout row justify-center>
-                <div style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2016-06-01&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"
-                     onclick="alert('AppStore申請中')"
-                ></div>
-
-                <img alt="Google Play で手に入れよう" src="https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png"
-                     width="155"
-                     height="60"
-                     style="margin-top:-10px;"
-                     onclick="alert('GooglePlay申請中')"
-                />
-              </v-layout>
+              <StoreIcon />
             </div>
           </div>
         </v-layout>
@@ -91,6 +80,5 @@ export default {
     .backCharacter {
       font-size: 200px;
     }
-
   }
 </style>
