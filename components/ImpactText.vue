@@ -26,17 +26,15 @@
             </div>
             <div v-if="storeIcon">
               <v-layout row justify-center>
-                <v-img :src="require('../assets/store/app_store_badge.svg')"
-                       width="100"
-                       height="55"
-                       style="border-radius: 10px;"
-                       onclick="alert('AppStore申請中')"
-                />
-                <v-img :src="require('../assets/store/google-play-badge.png')"
-                       width="120"
-                       height="55"
-                       style="border-radius: 10px;"
-                       onclick="alert('GooglePlay申請中')"
+                <div style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2016-06-01&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"
+                     onclick="alert('AppStore申請中')"
+                ></div>
+
+                <img alt="Google Play で手に入れよう" src="https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png"
+                     width="155"
+                     height="60"
+                     style="margin-top:-10px;"
+                     onclick="alert('GooglePlay申請中')"
                 />
               </v-layout>
             </div>
