@@ -1,6 +1,6 @@
 <template>
   <!-- fluidで横幅いっぱい full-heightで高さいっぱいにする-->
-  <v-container bg fluid fill-height data-aos="fade-in">
+  <v-container bg fluid fill-height data-aos="fade-in" class="root">
     <!-- v-layoutとv-flexで上下左右中央寄せにする-->
     <v-layout row wrap align-center>
       <v-flex>
@@ -83,6 +83,11 @@ export default {
     transform: translate(-0%, -50%);
   }
   @media (max-width: 600px) {
+    .root {
+      /*height: */
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
     h2 {
       font-size: 60px;
     }

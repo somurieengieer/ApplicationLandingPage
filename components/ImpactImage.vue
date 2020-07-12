@@ -1,7 +1,7 @@
 <template>
-  <v-layout justify-center style="height: 100px;">
+  <v-layout justify-center class="containerLayout">
 <!--    @/assetsは呼び出し元で指定できない（するとcannot find moduleエラー）-->
-    <div style="topLayout">
+    <div class="topLayout">
       <img class="topImage"
              :src="require(`@/assets/${src}`)" />
     </div>
@@ -19,24 +19,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .containerLayout {
+    height: 100px !important;
+  }
   .topLayout {
     /*height: 400px; heightはstyleに書かないと優先順的に動かない */
+    height: 100px !important;
     position: absolute;
     perspective: 2000px;
   }
   .topImage {
-    /*width: 60%;*/
     max-width: 300px;
     position: relative;
     top: 0px;
     left: 0px;
     transform-style: preserve-3d;
     transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg);
-    /*transform: rotateX(40deg) rotateY(-10deg) rotateZ(-60deg)  translate(-50%, -30%);*/
   }
   @media (max-width: 600px) {
+    .containerLayout {
+      height: 200px !important;
+    }
+    .topLayout {
+      height: 200px !important;
+    }
     .topImage {
-      max-width: 200px;
+      width: 200px;
+      top: -50%;
     }
 
   }
