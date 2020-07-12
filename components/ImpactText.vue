@@ -1,8 +1,8 @@
 <template>
   <!-- fluidで横幅いっぱい full-heightで高さいっぱいにする-->
   <!-- v-layoutとv-flexで上下左右中央寄せにする-->
-  <v-layout fluid fill-height row wrap align-center
-            data-aos="fade-in" class="root">
+  <v-layout align-center
+            class="root">
     <!-- v-layoutで左右中央寄せにする -->
     <v-layout justify-center>
       <div class="alignCenterParent">
