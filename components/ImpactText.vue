@@ -1,10 +1,8 @@
 <template>
   <!-- fluidで横幅いっぱい full-heightで高さいっぱいにする-->
   <!-- v-layoutとv-flexで上下左右中央寄せにする-->
-  <v-layout align-center
-            class="root">
     <!-- v-layoutで左右中央寄せにする -->
-    <v-layout justify-center>
+    <v-layout justify-center align-center class="root">
       <div class="alignCenterParent">
         <div class="h2div"
              data-aos="zoom-in"
@@ -28,7 +26,6 @@
         </div>
       </div>
     </v-layout>
-  </v-layout>
 </template>
 
 <script>
