@@ -35,14 +35,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-  p {
-    color: #FFFFFF;
-  }
   .storeButton {
     z-index: 3;
-    background-color: #4FD360; /* メインの緑より一段回明るい色 */
-    /*background-color: #3FC350;*/
+    background-color: var(--v-accent-base); /* メインの緑より一段回明るい色 */
     padding: 10px 30px 10px 30px;
     margin-left: 10px;
     margin-right: 10px;

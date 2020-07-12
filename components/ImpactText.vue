@@ -50,14 +50,14 @@ export default {
 <style scoped>
   h2 {
     font-size: 100px;
-    color: #FFFFFF;
+    color: var(--v-primary-base);
     margin-bottom: 0;
   }
   p {
-    color: #FFFFFF;
+    color: var(--v-primary-base);
   }
   .backCharacter {
-    color: #FFFFFF;
+    color: var(--v-primary-base);
     font-size: 300px;
     opacity: 0.2;
   }
