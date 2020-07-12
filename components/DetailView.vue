@@ -5,7 +5,7 @@
     <ImpactImageText :main-message="mainMessage"
                      :sub-message="subMessage"
                      :back-character="backCharacter"
-                     :store-icon="false"
+                     :store-icon=false
                      :src="src"
                      :imageLeft=imageLeft
     />

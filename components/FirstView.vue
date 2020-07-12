@@ -3,7 +3,7 @@
     <ImpactImageText main-message="びちくん"
                      sub-message="かつてない備蓄品管理体験をあなたに"
                      back-character="備"
-                     store-icon="true"
+                     :store-icon=true
                      src="bichikun/screenshot1.png"
                      />
   </v-container>

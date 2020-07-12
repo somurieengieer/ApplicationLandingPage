@@ -1,15 +1,14 @@
 <template>
-  <v-content>
+  <v-main>
     <FirstView/>
     <DetailView main-message="Free"
-                sub-message="備蓄品を数え直して"
+                sub-message="備蓄品を何度も確認する必要はもうありません"
                 back-character="F"
                 src="bichikun/screenshot2.png"
                 :image-left=true
     />
-<!--    sub-message="備蓄品を数え直して頭を悩ませていた日々はもう終わりです"-->
     <DetailView main-message="Nature"
-                sub-message="フードロス０の社会を一緒に創りませんか"
+                sub-message="フードロスのない社会を一緒に創りませんか"
                 back-character="N"
                 src="bichikun/screenshot3.png"
     />
@@ -19,7 +18,7 @@
                 src="bichikun/screenshot3.png"
                 :image-left=true
     />
-  </v-content>
+  </v-main>
 </template>
 
 <script>
