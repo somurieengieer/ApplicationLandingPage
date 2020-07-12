@@ -23,7 +23,6 @@ export default {
     height: 100px !important;
   }
   .topLayout {
-    /*height: 400px; heightはstyleに書かないと優先順的に動かない */
     height: 100px !important;
     position: absolute;
     perspective: 2000px;

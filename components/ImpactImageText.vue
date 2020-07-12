@@ -18,7 +18,7 @@
         <v-container bg fill-height
                      v-if="leftItem === imageLeft"
         >
-          <ImpactImage3d :src="src" />
+          <ImpactImage :src="src" />
         </v-container>
       </v-flex>
     </v-layout>
@@ -27,11 +27,11 @@
 
 <script>
   import ImpactText from "./ImpactText";
-  import ImpactImage3d from "./ImpactImage";
+  import ImpactImage from "./ImpactImage";
 
   export default {
     name: 'ImpactImageText',
-    components: {ImpactImage3d, ImpactText},
+    components: {ImpactImage, ImpactText},
     props: {
       mainMessage: String,
       subMessage: String,
