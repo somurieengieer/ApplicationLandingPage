@@ -9,12 +9,12 @@
         <v-img
           alt="Logo"
           contain
-          :src="require('@/assets/bichikun/store_icon.svg')"
+          :src="require('@/assets/logo.svg')"
           transition="scale-transition"
           width="40"
         />
         <h3 style="margin-left: 1em;"
-        >備蓄品管理ツール びちくん</h3>
+        >{{ title }}</h3>
       </div>
 
 <!--      <v-spacer></v-spacer>-->
@@ -37,27 +37,25 @@
 
 <script>
 export default {
+  props: {
+    title: String,
+  },
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      title: ''
+    }
+  },
+  created() {
+    this.setListener()
+  },
+  methods: {
+    setListener() {
+      // タイトルは以下を参考に実装
+      // https://qiita.com/yama-t/items/b051cd9ea802f69da118
+      this.$nuxt.$on('updateHeaderTitle', this.setHeader)
+    },
+    setHeader(title) {
+      this.title = title || ''
     }
   }
 }

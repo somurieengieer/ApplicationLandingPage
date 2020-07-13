@@ -34,7 +34,17 @@
       FirstView,
     },
     data: () => ({
-      //
+      header: {
+        title: '備蓄管理ツールびちくん'
+      }
     }),
+    mounted() {
+      this.updateHeader()
+    },
+    methods: {
+      updateHeader() {
+        this.$nuxt.$emit('updateHeaderTitle', this.header.title)
+      }
+    }
   };
 </script>

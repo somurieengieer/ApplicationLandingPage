@@ -56,8 +56,18 @@
     components: {
     },
     data: () => ({
-      //
+      header: {
+        title: 'プライバシーポリシー'
+      }
     }),
+    mounted() {
+      this.updateHeader()
+    },
+    methods: {
+      updateHeader() {
+        this.$nuxt.$emit('updateHeaderTitle', this.header.title)
+      }
+    }
   };
 </script>
 
