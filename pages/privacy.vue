@@ -49,14 +49,16 @@
 </template>
 
 <script>
-
   export default {
-  components: {
-  },
-  data: () => ({
-    //
-  }),
-};
+    head: {
+      title: 'プライバシーポリシー'
+    },
+    components: {
+    },
+    data: () => ({
+      //
+    }),
+  };
 </script>
 
 <style scoped>

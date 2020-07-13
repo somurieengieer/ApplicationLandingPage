@@ -25,14 +25,16 @@
   import FirstView from "../components/FirstView";
   import DetailView from "../components/DetailView";
 
-
   export default {
-  components: {
-    DetailView,
-    FirstView,
-  },
-  data: () => ({
-    //
-  }),
-};
+    head: {
+      title: '備蓄管理ツールびちくん'
+    },
+    components: {
+      DetailView,
+      FirstView,
+    },
+    data: () => ({
+      //
+    }),
+  };
 </script>
