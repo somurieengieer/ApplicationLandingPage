@@ -1,91 +1,55 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
+  <v-main>
+    <v-container fluid>
+      <v-row dense>
+        <v-col
+          v-for="card in cards"
+          :key="card.title"
+          :cols="card.flex"
+        >
+          <nuxt-link :to="card.url">
+          <v-card>
+            <v-img
+              :src="card.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
             >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+              <v-card-title v-text="card.title"></v-card-title>
+            </v-img>
+          </v-card>
+          </nuxt-link>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-main>
 </template>
 
 <script>
-
   export default {
-  components: {
+    head: {
+      title: 'アプリケーション一覧'
+    },
+    components: {
+    },
+    data: () => ({
+      cards: [
+        { title: '備蓄管理システム びちくん',
+          src: require('@/assets/bichikun/screenshot1.png'),
+          url: '/bichikun',
+          flex: 6 },
+      ],
+      header: {
+        title: 'アプリケーション一覧'
+      }
+    }),
+    mounted() {
+      this.updateHeader()
+    },
+    methods: {
+      updateHeader() {
+        this.$nuxt.$emit('updateHeaderTitle', this.header.title)
+      }
+    }
   }
-}
 </script>
