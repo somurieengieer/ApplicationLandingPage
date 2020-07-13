@@ -52,10 +52,12 @@ export default {
     }
     .topLayout {
       height: 200px !important;
+      perspective: 1000px;
     }
     .topImage {
-      width: 200px;
-      top: -50%;
+      width: 160px;
+      top: -40%;
+      transform: rotateX(40deg) rotateY(-10deg) rotateZ(-40deg);
     }
   }
 </style>

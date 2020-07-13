@@ -2,7 +2,7 @@
   <!-- v-layoutにrowを入れれば横並び、columnで縦-->
   <v-layout align-center fill-height
   >
-    <v-layout row wrap>
+    <v-layout wrap>
 
       <!-- v-layoutで左右中央寄せにする -->
       <v-flex xs12 sm12 md6
@@ -15,11 +15,9 @@
                     :store-icon="storeIcon"
                     v-if="leftItem !== imageLeft"
                     />
-        <v-container bg fill-height
-                     v-if="leftItem === imageLeft"
-        >
-          <ImpactImage :src="src" />
-        </v-container>
+          <ImpactImage :src="src"
+                       v-if="leftItem === imageLeft"
+          />
       </v-flex>
     </v-layout>
   </v-layout>
