@@ -32,6 +32,16 @@
     </v-app-bar>
 
     <nuxt />
+
+    <v-footer
+      :absolute="true"
+      app
+    >
+      <v-layout justify-center style="color: #AAAAAA;">
+        <span style="color: #AAAAAA;">&copy; somuriengineer 2020 </span>
+        <nuxt-link to="/privacy" style="margin-left: 5px; color: #AAAAAA;">Privacy Policy</nuxt-link>
+      </v-layout>
+    </v-footer>
   </v-app>
 </template>
 
