@@ -34,7 +34,7 @@
     },
     data: () => ({
       cards: [
-        { title: '備蓄管理システム びちくん',
+        { title: '備蓄品管理システム びちくん',
           src: require('@/assets/bichikun/screenshot1.png'),
           url: '/bichikun',
           flex: 6 },

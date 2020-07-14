@@ -27,7 +27,7 @@
 
   export default {
     head: {
-      title: '備蓄管理ツールびちくん'
+      title: '備蓄品管理ツールびちくん'
     },
     components: {
       DetailView,
@@ -35,7 +35,7 @@
     },
     data: () => ({
       header: {
-        title: '備蓄管理ツールびちくん'
+        title: '備蓄品管理ツールびちくん'
       }
     }),
     mounted() {
