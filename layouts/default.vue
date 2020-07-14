@@ -6,13 +6,15 @@
       dark
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Logo"
-          contain
-          :src="require('@/assets/logo.svg')"
-          transition="scale-transition"
-          width="40"
-        />
+        <nuxt-link to="/">
+          <v-img
+            alt="Logo"
+            contain
+            :src="require('@/assets/logo.svg')"
+            transition="scale-transition"
+            width="40"
+          />
+        </nuxt-link>
         <h3 style="margin-left: 1em;"
         >{{ title }}</h3>
       </div>

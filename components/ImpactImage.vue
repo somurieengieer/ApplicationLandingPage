@@ -37,13 +37,13 @@ export default {
   }
   @media (max-width: 960px) {
     .containerLayout {
-      height: 300px !important;
+      height: 360px !important;
     }
     .topLayout {
-      height: 300px !important;
+      height: 360px !important;
     }
     .topImage {
-      top: -50%;
+      top: -35%;
     }
   }
   @media (max-width: 600px) {
