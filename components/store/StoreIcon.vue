@@ -1,6 +1,6 @@
 <template>
   <v-layout row justify-center>
-    <button onclick="alert('AppStore申請中')" class="storeButton">
+    <button onclick="location.href='https://apps.apple.com/jp/app/%E3%81%B3%E3%81%A1%E3%81%8F%E3%82%93/id1522604218?mt=8'" class="storeButton">
       <v-layout row justify-center>
         <v-flex>
           <img :src="require('@/assets/store/apple_store_logo.svg')" width="28"/>
