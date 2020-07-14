@@ -36,7 +36,7 @@ export default {
     margin-top: 100px;
     padding: 0;
     position: relative;
-    height: 800px;
+    height: 100vh;
   }
   .topContainer:before {
     display: block;
