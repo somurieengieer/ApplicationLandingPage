@@ -11,7 +11,7 @@
         </v-flex>
       </v-layout>
     </button>
-    <button onclick="alert('GooglePlay申請中')" class="storeButton">
+    <button onclick="location.href='https://play.google.com/store/apps/details?id=com.somuriengineer.bitikun'" class="storeButton">
       <v-layout row justify-center>
         <v-flex>
           <img :src="require('@/assets/store/google_play_logo.svg')" width="28"/>
